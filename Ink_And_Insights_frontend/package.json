@@ -1,13 +1,12 @@
 {
-  "name": "test-frontend",
+  "name": "Ink_And_Insights_frontend",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:test-frontend": "node dist/test-frontend/server/server.mjs"
+    "test": "ng test"
   },
   "prettier": {
     "printWidth": 100,
@@ -23,14 +22,14 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^20.3.0",
-    "@angular/compiler": "^20.3.0",
-    "@angular/core": "^20.3.0",
-    "@angular/forms": "^20.3.0",
-    "@angular/platform-browser": "^20.3.0",
-    "@angular/platform-server": "^20.3.0",
-    "@angular/router": "^20.3.0",
-    "@angular/ssr": "^20.3.12",
+    "@angular/common": "^20.3.18",
+    "@angular/compiler": "^20.3.18",
+    "@angular/core": "^20.3.18",
+    "@angular/forms": "^20.3.18",
+    "@angular/platform-browser": "^20.3.18",
+    "@angular/platform-server": "^20.3.18",
+    "@angular/router": "^20.3.18",
+    "@angular/ssr": "^20.3.18",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@microsoft/signalr": "^10.0.0",
     "@ng-bootstrap/ng-bootstrap": "^19.0.1",
@@ -43,10 +42,10 @@
     "zone.js": "^0.15.1"
   },
   "devDependencies": {
-    "@angular/build": "^20.3.12",
+    "@angular/build": "^20.3.18",
     "@angular/cli": "^20.0.6",
-    "@angular/compiler-cli": "^20.3.0",
-    "@angular/localize": "^20.3.0",
+    "@angular/compiler-cli": "^20.3.18",
+    "@angular/localize": "^20.3.18",
     "@ngx-env/builder": "^20.1.1",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
@@ -59,5 +58,11 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.2"
+  },
+  "overrides": {
+    "vite": "^7.3.2",
+    "rollup": "^4.58.1",
+    "ajv": "^8.17.2",
+    "picomatch": "^4.0.4"
   }
 }

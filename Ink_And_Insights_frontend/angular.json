@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test-frontend": {
+    "ink-insights-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,12 +25,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
-            "polyfills": [
-              "@angular/localize/init"
-            ]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
@@ -60,10 +56,10 @@
           "builder": "@ngx-env/builder:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "test-frontend:build:production"
+              "buildTarget": "ink-insights-frontend:build:production"
             },
             "development": {
-              "buildTarget": "test-frontend:build:development"
+              "buildTarget": "ink-insights-frontend:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -83,12 +79,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "polyfills": [
-              "@angular/localize/init"
-            ]
+            "styles": ["src/styles.css"],
+            "polyfills": ["@angular/localize/init"]
           }
         }
       }

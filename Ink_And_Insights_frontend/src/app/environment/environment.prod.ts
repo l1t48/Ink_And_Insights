@@ -1,5 +1,5 @@
 export const environment = {
-  production: true,
-  apiBaseUrl: 'https://test-backend-u24f.onrender.com/api',
-  baseUrlWithoutAPI: 'https://test-backend-u24f.onrender.com' 
+  production: import.meta.env.NG_APP_ENV === 'production',
+  apiBaseUrl: import.meta.env.NG_APP_API_BASE_URL,
+  baseUrlWithoutAPI: import.meta.env.NG_APP_BASE_URL
 };
